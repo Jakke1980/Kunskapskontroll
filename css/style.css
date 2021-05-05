@@ -13,11 +13,11 @@
 
  body {
      background-color: #fff;
-     margin: 0;
-     width: 960px;
+     margin: auto;
+     /* width: 1200px; */
      /* padding-top: 72px;
      /* line-height: 150%; /* means 150% increase */
-     font-size: 16px;
+     /* font-size: 16px; */
  }
 
  body:hover {
@@ -79,32 +79,102 @@ h5, h6 {
 
 /* Paragraph */
 
-p {
+/* p {
     margin-bottom: 24px;
 }
 
 /* Lists */
 
-ul {
+/* ul {
     margin-bottom: 24px;  
     list-style: square outside;
 }
 
 ul ul {
     margin: 0 0 0 60px;
-}
+} */
 
 /* Layout
 */
 
-.navbar,
-main,
-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 320px 150px;
+
+#header {
+    display: flex;
 }
 
-.navbar {
-    align-content: space-between;
+#bild_strand_gotland {
+    width: 960px;
+    flex: 1 1 960px;
+}
+
+#container {
+    width: 960px;
+    margin: auto;
+    /* background-color:;
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+                    "navbar navbar"
+                    "main main"
+                    "footer footer"
+    ; */
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: navbar;
+    background-color: ;
+    border: 1px solid #333;
+    width: 958px;
+    height: 40px;
+    
+    
+}
+
+#navbar ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-weight: 600;
+    padding-inline-start: 0px;
+    justify-content: space-evenly;   
+}
+
+#navbar ul li:not(:first-child) {
+    margin-left: 80px;
+}
+
+ul li a {
+    color: lightseagreen;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+ul li a:hover {
+    background-color: rgb(104, 104, 114);
+    color: white;
+
+}
+
+.active {
+    background-color: rgb(31, 31, 74);
+    color: white; 
+
+#main {
+    grid-area: main;
+    
+    margin-left: 5px;
+    width: 960px;
+    height: 500px;
+}
+
+#footer {
+    grid-area: footer;
+    margin: auto;
+    border: 1px solid #333;
+    width: 960px;
+    height: 100px;
 }
