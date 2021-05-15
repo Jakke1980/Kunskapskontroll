@@ -1,6 +1,10 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
+
+
+/* multi select 
+[class*="book"] */
 
 /*
  * Main Font rules
@@ -109,17 +113,9 @@ ul ul {
 
 #container {
     width: 960px;
+    display: flew;
     margin: auto;
-    /* background-color:;
-    display: grid;
-    row-gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-                    "navbar navbar"
-                    "main main"
-                    "footer footer"
-    ; */
+    background-color:;
 }
 
 #navbar {
@@ -131,6 +127,7 @@ ul ul {
     border: 1px solid #333;
     width: 958px;
     height: 40px;
+    margin-top: 30px;
     
     
 }
@@ -138,7 +135,7 @@ ul ul {
 #navbar ul {
     display: inline-flex;
     list-style-type: none;
-    font-weight: 600;
+    font-weight: 400;
     padding-inline-start: 0px;
     justify-content: space-evenly;   
 }
@@ -156,25 +153,111 @@ ul li a {
 ul li a:hover {
     background-color: rgb(104, 104, 114);
     color: white;
-
+    border-radius: 5px; 
 }
 
 .active {
     background-color: rgb(31, 31, 74);
-    color: white; 
-
-#main {
-    grid-area: main;
-    
-    margin-left: 5px;
-    width: 960px;
-    height: 500px;
+    color: white;
+    border-radius: 5px;   
 }
 
-#footer {
-    grid-area: footer;
-    margin: auto;
+.book-widget,
+.book-container,
+.book-row,
+.book-col-12,
+.book-form-inline {
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.book-widget-bg, 
+.book-widget-booking-strip-size, 
+.book-widget-size-all, 
+.book-widget-horizontal {
+    border: 0px;
+    padding: 3px;
+}
+
+.mySlides {
+    grid-area: mainImg;
+    margin-top: 30px;
+    border: 1px solid #333; 
+}
+
+/* slideshow CSS*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 480px;
+  position: relative;
+  margin-left: 20px;
+}
+/* Hide img by default*/
+.mySlides {
+    display: none;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .25}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .25}
+    to {opacity: 1}
+  }
+
+
+
+#main_text_gotland {
+    margin-top: 35px;
+    margin-left: 25px;
+    grid-area: mainTxt;
     border: 1px solid #333;
+    width: 400px; 
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+                            "mainImg mainTxt"   
+    ;
+}
+#footer {
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #333;
+    padding: 20px;
     width: 960px;
     height: 100px;
+    grid-template-areas: "karta kontakt adress";
 }
+
+#booking-reward {
+    width: 260px;
+    grid-area: karta;
+}
+
+#kontakt_footer {
+    padding-left: 70px;
+    grid-area: kontakt;
+}
+
+#adress_gotland {
+    padding-left: 70px;
+    grid-area: adress;
+}
+

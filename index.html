@@ -3,18 +3,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ljungs Fem Rum</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js'></script> 
+
+    
+    
 </head>
 <body>
-    <div class="main">
+    
     <!-- Logo, bild på stranden -->
         <header id="header">
             <img src="img/Vastergarn-strand2.png" id="bild_strand_gotland" alt="Stranden i Västergarn på Gotlands västkust">
         </header>
     <!-- Navigation links  -->
-    <div id="container">
+ <div id="container">
         <nav id="navbar">
             <ul id="navbar-list">
                 <li><a href="index.html" class="active" id="hem_gotland">Hem</a></li>                        
@@ -23,21 +29,57 @@
                 <li><a href="" id="om_oss_gotland">Om oss</a></li>
                 <li><a href="" id="kontakt_gotland">Kontakt</a></li>
             </ul>
+            
+            
         </nav>
+        <div id='bookWidget-36690-64319-0-1621105362'> </div>
     <!-- Main content, bild/bildspel på anlägningen -->
+    
         <main id="main">
-            <img src="img/Boende-Västergarn-Gotland-Längan-ladan.jpg" id="main_boende_gotland_bild" alt="Ljungs Fem Rum, kustnära boende på Gotland"  width="480px" height="320px">
-            <p id="main_text_gotland">
+            <div class="slideshow-container">
+                 <div class="mySlides fade">
+                    <img src="img/Boende-Västergarn-Gotland-Längan-ladan.jpg" id="main_boende_gotland_bild" alt="Ljungs Fem Rum, kustnära boende på Gotland"  width="480px" height="320px">
+                    <div class="text"></div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="img/studio standard.jpg" alt="studio standard" width="480" height="320">
+                    <div class="text"></div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="img/studio large.jpg" alt="studio large" width="480" height="320">
+                    <div class="text"></div>
+                  </div>
 
+                  <div class="mySlides fade">
+                    <img src="img/kitchen.jpg" alt="kök" width="480" height="320">
+                    <div class="text"></div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/bathroom.jpg" alt="badrum" width="480" height="320">
+                    <div class="text"></div>
+                  </div>
+            </div>
+            <script src="js/main.js"></script>
+            
+            <p id="main_text_gotland">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, iure itaque pariatur enim reprehenderit, incidunt excepturi quibusdam veritatis adipisci quos est, doloribus optio laborum harum officiis. Facere, unde ullam!
             </p>
         </main>
     <!-- Karta, kontaktuppgifter(epost/tel) adress? social proof Booking rating alt. rewievs -->
         <footer id="footer">
-            <div id="karta_gotland">Karta</div>
-            <div id="kontakt_footer_gotland">Karta</div>
-            <div id="adress_gotland">Karta</div>
+            <img src="img/rating.png" id="booking-reward" alt="Betyg från Booking">
+            <div id="kontakt_footer">
+                <a href="tel:+46793484269" id="tel">Tel: 079-348 42 69</a><br>
+                <a href="mailto:info@ljungsfemrum.se?subject=Förfrågan" id="mail">E-post: info@ljungsfemrum.se</a> 
+            </div>
+            <div id="adress_gotland">Västergarn Stelor 153<br>
+            622 30 Gotlands Tofta<br>
+            Sverige</div>
         </footer>
-    </div>
 </div>
 </body>
 </html>
