@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 
@@ -109,6 +109,7 @@ ul ul {
 #bild_strand_gotland {
     width: 960px;
     flex: 1 1 960px;
+    margin-bottom: 10px;
 }
 
 #container {
@@ -126,10 +127,7 @@ ul ul {
     background-color: ;
     border: 1px solid #333;
     width: 958px;
-    height: 40px;
-    margin-top: 30px;
-    
-    
+    height: 40px; 
 }
 
 #navbar ul {
@@ -162,27 +160,47 @@ ul li a:hover {
     border-radius: 5px;   
 }
 
+//widget container
+#bookWidget-36690-64319-0-1621105362,
 .book-widget,
+.book-widget-holder,
 .book-container,
-.book-row,
 .book-col-12,
-.book-form-inline {
+.book-widget-bg,
+.book-widget-booking-strip-size,
+.book-widget-size-all,
+.book-widget-horizontal {
     height: 50px;
-    margin: 0px;
-    padding: 0px;
+    width: 960px;
+    padding: 0px !important; 
 }
 
-.book-widget-bg, 
-.book-widget-booking-strip-size, 
-.book-widget-size-all, 
-.book-widget-horizontal {
-    border: 0px;
-    padding: 3px;
+.book-form-inline {
+    height: 50px !important;
+    margin: 0px !important;
+}
+
+.book-widget-bg {
+    padding: 0px !important;
+}
+
+.book-row,
+.book-form-group,
+.book-form-group.book-va-bottom {
+    height: 50px !important;
+    margin-right: 10px !important;
+    padding: 0px !important;
+}
+
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
 }
 
 .mySlides {
     grid-area: mainImg;
-    margin-top: 30px;
+    margin-top: 15px;
     border: 1px solid #333; 
 }
 
@@ -193,6 +211,7 @@ ul li a:hover {
   max-width: 480px;
   position: relative;
   margin-left: 20px;
+  z-index: -1;
 }
 /* Hide img by default*/
 .mySlides {
@@ -219,7 +238,7 @@ ul li a:hover {
 
 
 #main_text_gotland {
-    margin-top: 35px;
+    margin-top: 20px;
     margin-left: 25px;
     grid-area: mainTxt;
     border: 1px solid #333;
