@@ -187,7 +187,6 @@ top: 0;
 .mySlides {
     grid-area: mainImg;
     margin-top: 15px;
-    border: 1px solid #333; 
 }
 
 /* slideshow CSS*/
@@ -204,21 +203,21 @@ top: 0;
     display: none;
   }
 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 4s;
-    animation-name: fade;
-    animation-duration: 4s;
+  .fadeinout {
+    -webkit-animation-name: fadeinout;
+    -webkit-animation-duration: 8s;
+    animation-name: fadeinout;
+    animation-duration: 8s;
   }
   
-  @-webkit-keyframes fade {
-    from {opacity: .25}
-    to {opacity: 1}
+  @-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
   }
   
-  @keyframes fade {
-    from {opacity: .25}
-    to {opacity: 1}
+  @keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
   }
 
 #mainHeading {
@@ -285,12 +284,61 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-                            "mainImg mainTxt"
-                            "reviews mainTxt"
+                            "mainTxt mainImg"
+                            "mainTxt reviews"
                             "footer footer"                        
     ;
 }
 
+/* BOENDE */
+#propertyImg {
+    grid-area: propertyImg;
+}
+#propertyTxt {
+    grid-area: propertyTxt;
+}
+
+#studioSmallImg {
+    grid-area: studioSmallImg;
+}
+#studioSmallTxt {
+    grid-area: studioSmallTxt;
+}
+
+#studioStandardImg {
+    grid-area: studioStandardImg;
+}
+#studioStandardTxt {
+    grid-area: studioStandardTxt;
+}
+
+#studioLargeImg {
+    grid-area: studioLargeImg;
+}
+#studioLargeTxt {
+    grid-area: studioLargeTxt;
+}
+
+#studioLoftImg {
+    grid-area: studioLoftImg;
+}
+#studioLoftTxt {
+    grid-area: studioLoftTxt;
+}
+
+
+#boende {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+                            "propertyImg propertyTxt"
+                            "studioSmallImg studioSmallTxt"
+                            "studioStandardImg studioStandardTxt"
+                            "studioLargeImg studioLargeTxt"
+                            "studioLoftImg studioLoftTxt"
+    ;
+}
 
 
 #footer {
