@@ -44,11 +44,6 @@ If 16 is our font-size, then 16 * 1.5 = 24 is our magic number
 24 will be used to determen the vertical rythme of our content
 */
 
- h1, h2, h3, h4, h5, h6 {
-     margin-bottom: 24px;
-     font-weight: bold;
- }
-
  /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,23 +78,14 @@ h5, h6 {
 
 /* Paragraph */
 
-/* p {
+p {
     margin-bottom: 24px;
+    line-height: 24px;
 }
 
-/* Lists */
 
-/* ul {
-    margin-bottom: 24px;  
-    list-style: square outside;
-}
+/* Layout */
 
-ul ul {
-    margin: 0 0 0 60px;
-} */
-
-/* Layout
-*/
 
 
 #header {
@@ -160,7 +146,7 @@ ul li a:hover {
     border-radius: 5px;   
 }
 
-//widget container
+/*widget container*/
 #bookWidget-36690-64319-0-1621105362,
 .book-widget,
 .book-widget-holder,
@@ -208,9 +194,9 @@ top: 0;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 480px;
+  max-width: 490px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 10px;
   z-index: -1;
 }
 /* Hide img by default*/
@@ -235,14 +221,63 @@ top: 0;
     to {opacity: 1}
   }
 
+#mainHeading {
+   color: lightseagreen;
+   text-align: center;
+   margin-top: 10px; 
+}
 
-
-#main_text_gotland {
-    margin-top: 20px;
+#mainTxt {
+    margin-top: 15px;
     margin-left: 25px;
     grid-area: mainTxt;
     border: 1px solid #333;
-    width: 400px; 
+    width: 435px;
+    color: #333; 
+}
+#mainInfo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#infoList {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#infoList li {
+    line-height: 24px;
+}
+
+#reviews {
+    margin-left: 10px;
+    grid-area: reviews;
+    border: 1px solid #333;
+    width: 490px;
+    line-height: 24px; 
+}
+
+.review {
+    display: inline-block;
+    height: 96px;
+    vertical-align: text-top;
+    width: 145px;
+    text-align: center;
+}
+
+#firstReview,
+#middleReview {
+    margin: 10px 20px 0px 0px;
+}
+
+
+#middleReview {
+    width: 160px;
+}
+
+#lastReview {
+    margin: 10px 0px 0px 0px;
+    width: 130px;
 }
 
 main {
@@ -250,24 +285,31 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-                            "mainImg mainTxt"   
+                            "mainImg mainTxt"
+                            "reviews mainTxt"
+                            "footer footer"                        
     ;
 }
+
+
+
 #footer {
     margin: auto;
     margin-top: 30px;
+    grid-area: footer;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85px;
+    align-items: center;
+    justify-items: center;
     border: 1px solid #333;
-    padding: 20px;
     width: 960px;
-    height: 100px;
-    grid-template-areas: "karta kontakt adress";
+    grid-template-areas: "rating kontakt adress";
 }
 
 #booking-reward {
     width: 260px;
-    grid-area: karta;
+    grid-area: rating;
 }
 
 #kontakt_footer {
