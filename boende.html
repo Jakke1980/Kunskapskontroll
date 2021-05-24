@@ -6,10 +6,12 @@
     <title>Ljungs Fem Rum</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/w2.css"> -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js'></script> 
-    <script src="js/main.js"></script>
+   
+    <script src="js/boende.js"></script>
     
     
 </head>
@@ -24,7 +26,7 @@
 
      <div id='bookWidget-36690-64319-0-1621105362' class="sticky"> </div>
      
-     <script src="js/boende.js"></script> 
+     
         
      <nav id="navbar">
             <ul id="navbar-list">
@@ -40,21 +42,158 @@
     <!-- Main content, bild/bildspel på anlägningen -->
     
     <main id="boende">
-                  
-           
-            <img id="propertyImg" src="" alt="Bilder på fastigheten, utekök, cycklar">
+          
+        <!-- Property -->
+        <div class="w3-content" id="propertyImg">
+            <img class="mySlides1" id="propertyImg1" src="img/property/Ljungs_Fem_Rum_Boende_Gotland.jpg" alt="Boende på Gotland Ljungs Fem Rum ">
+            <img class="mySlides1" id="propertyImg2" src="img/property/Ladan_LjungsFemRum.jpg" alt="Boende på Gotland Ljungs Fem Rum Ladan ">
+            <img class="mySlides1" id="propertyImg3" src="img/property/Langan_LjungsFemRum.jpg" alt="Boende på Gotland Ljungs Fem Rum Längan">
+            <img class="mySlides1" id="propertyImg4" src="img/property/Ljungs_Fem_Rum_Frukost_servering.jpg" alt="Boende på Gotland Ljungs Fem Rum Frukost">
+            <img class="mySlides1" id="propertyImg5" src="img/property/Ljungs_Fem_Rum_Frukost.jpg" alt="Boende på Gotland Ljungs Fem Rum Frukost">
+            <img class="mySlides1" id="propertyImg6" src="img/property/Utemiljo_LjungsFemRum.jpg" alt="Boende på Gotland Ljungs Fem Rum Utemiljö">
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Ljungs_Fem_Rum_Boende_Gotland.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Ladan_LjungsFemRum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Langan_LjungsFemRum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(3)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Ljungs_Fem_Rum_Frukost_servering.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(4)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Ljungs_Fem_Rum_Frukost.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(5)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo1 w3-opacity w3-hover-opacity-off" src="img/property/Utemiljo_LjungsFemRum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv1(6)">
+                </div>
+            </div>
+              
+        </div>
             <p id="propertyTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta fuga eaque unde quidem, deleniti fugit minus neque consectetur facere, quisquam deserunt aliquid necessitatibus ea. Quae molestiae soluta beatae suscipit.</p>
                
-            <img id="studioSmallImg" src="" alt="uteplats, kök, badrum, rum">
+            <!-- Studio Small -->
+            <div class="w3-content" id="studioSmallImg">
+                <img class="mySlides2" id="studioSmallImg1" src="img/studiosmall/Studio_small.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Small">
+                <img class="mySlides2" id="studioSmallImg2" src="img/studiosmall/Studio_small_beds.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Small">
+                <img class="mySlides2" id="studioSmallImg3" src="img/studiosmall/Studio_small_pentry.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Small Pentry">
+                <img class="mySlides2" id="studioSmallImg4" src="img/studiosmall/Boende-gotland-västergarn-badrum.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Small Badrum">
+                <img class="mySlides2" id="studioSmallImg5" src="img/studiosmall/Studio_small_terass.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Small Terass">
+    
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo2 w3-opacity w3-hover-opacity-off" src="img/studiosmall/Studio_small.jpg" style="width:100%;cursor:pointer" onclick="currentDiv2(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo2 w3-opacity w3-hover-opacity-off" src="img/studiosmall/Studio_small_beds.jpg" style="width:100%;cursor:pointer" onclick="currentDiv2(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo2 w3-opacity w3-hover-opacity-off" src="img/studiosmall/Studio_small_pentry.jpg" style="width:100%;cursor:pointer" onclick="currentDiv2(3)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo2 w3-opacity w3-hover-opacity-off" src="img/studiosmall/Boende-gotland-västergarn-badrum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv2(4)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo2 w3-opacity w3-hover-opacity-off" src="img/studiosmall/Studio_small_terass.jpg" style="width:100%;cursor:pointer" onclick="currentDiv2(5)">
+                    </div>
+                </div>
+                  
+            </div>
+
             <p id="studioSmallTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta fuga eaque unde quidem, deleniti fugit minus neque consectetur facere, quisquam deserunt aliquid necessitatibus ea. Quae molestiae soluta beatae suscipit.</p>
            
-            <img id="studioStandardImg" src="" alt="uteplats, kök, badrum, rum">
+            
+            <!-- Studio Standard -->
+            <div class="w3-content" id="studioStandardImg">
+                <img class="mySlides3" id="studioSmallImg1" src="img/studiostandard/boende-standard-gotland-västergarn-rum.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Standard">
+                <img class="mySlides3" id="studioSmallImg2" src="img/studiostandard/Boende_gotland_standard.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Standard">
+                <img class="mySlides3" id="studioSmallImg3" src="img/studiostandard/Beonde_gotland_standard_pentry.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Standard Pentry">
+                <img class="mySlides3" id="studioSmallImg4" src="img/studiostandard/Badrum-studio_standard.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Standard Badrum">
+                <img class="mySlides3" id="studioSmallImg5" src="img/studiostandard/Studio_standard_terass.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Standard Terass">
+    
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo3 w3-opacity w3-hover-opacity-off" src="img/studiostandard/boende-standard-gotland-västergarn-rum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv3(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo3 w3-opacity w3-hover-opacity-off" src="img/studiostandard/Boende_gotland_standard.jpg" style="width:100%;cursor:pointer" onclick="currentDiv3(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo3 w3-opacity w3-hover-opacity-off" src="img/studiostandard/Beonde_gotland_standard_pentry.jpg" style="width:100%;cursor:pointer" onclick="currentDiv3(3)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo3 w3-opacity w3-hover-opacity-off" src="img/studiostandard/Badrum-studio_standard.jpg" style="width:100%;cursor:pointer" onclick="currentDiv3(4)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo3 w3-opacity w3-hover-opacity-off" src="img/studiostandard/Studio_standard_terass.jpg" style="width:100%;cursor:pointer" onclick="currentDiv3(5)">
+                    </div>
+                </div>
+                  
+            </div>
             <p id="studioStandardTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta fuga eaque unde quidem, deleniti fugit minus neque consectetur facere, quisquam deserunt aliquid necessitatibus ea. Quae molestiae soluta beatae suscipit.</p>
          
-            <img id="studioLargeImg" src="" alt="uteplats, kök, badrum, rum">
+        
+            <!-- Studio Large -->
+            <div class="w3-content" id="studioLargeImg">
+                <img class="mySlides4" id="studioLargeImg1" src="img/studiolarge/Boende Gotland Ljungs fem rum - rum nr 7.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Large">
+                <img class="mySlides4" id="studioLargeImg2" src="img/studiolarge/Boende-Large-gotland-västergarn-utsikt.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Large">
+                <img class="mySlides4" id="studioLargeImg3" src="img/studiolarge/Boende-Large-Gotland-Västergarn-kök.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Large Pentry">
+                <img class="mySlides4" id="studioLargeImg4" src="img/studiolarge/Boende-Large-Gotland-Västergarn-Badrum.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Large Badrum">
+                <img class="mySlides4" id="studioLargeImg5" src="img/studiolarge/Boende-Västergarn-Gotland-Längan.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Large Terass">
+    
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo4 w3-opacity w3-hover-opacity-off" src="img/studiolarge/Boende Gotland Ljungs fem rum - rum nr 7.jpg" style="width:100%;cursor:pointer" onclick="currentDiv4(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo4 w3-opacity w3-hover-opacity-off" src="img/studiolarge/Boende-Large-gotland-västergarn-utsikt.jpg" style="width:100%;cursor:pointer" onclick="currentDiv4(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo4 w3-opacity w3-hover-opacity-off" src="img/studiolarge/Boende-Large-Gotland-Västergarn-kök.jpg" style="width:100%;cursor:pointer" onclick="currentDiv4(3)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo4 w3-opacity w3-hover-opacity-off" src="img/studiolarge/Boende-Large-Gotland-Västergarn-Badrum.jpg" style="width:100%;cursor:pointer" onclick="currentDiv4(4)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo4 w3-opacity w3-hover-opacity-off" src="img/studiolarge/Boende-Västergarn-Gotland-Längan.jpg" style="width:100%;cursor:pointer" onclick="currentDiv4(5)">
+                    </div>
+                </div>
+                  
+            </div>
             <p id="studioLargeTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta fuga eaque unde quidem, deleniti fugit minus neque consectetur facere, quisquam deserunt aliquid necessitatibus ea. Quae molestiae soluta beatae suscipit.</p>
      
-            <img id="studioLoftImg" src="" alt="uteplats, kök, badrum, rum">
+            
+            <!-- Studio Loft -->
+            <div class="w3-content" id="studioLoftImg">
+                <img class="mySlides5" id="studioLoftImg1" src="img/studioloft/boende gotland ljungs fem rum - nr 6.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Loft">
+                <img class="mySlides5" id="studioLoftImg2" src="img/studioloft/Boende_Gotland_Loft.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Loft">
+                <img class="mySlides5" id="studioLoftImg3" src="img/studioloft/Boende_Loft_stege_pentry.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Loft Pentry">
+                <img class="mySlides5" id="studioLoftImg4" src="img/studioloft/Boende Gotland ljungs fem rum - badrum 6.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Loft Badrum">
+                <img class="mySlides5" id="studioLoftImg5" src="img/studioloft/Boende-Västergarn-Gotland-Längan.jpg" alt="Boende på Gotland Ljungs Fem Rum Studio Loft Terass">
+    
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo5 w3-opacity w3-hover-opacity-off" src="img/studioloft/boende gotland ljungs fem rum - nr 6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv5(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo5 w3-opacity w3-hover-opacity-off" src="img/studioloft/Boende_Gotland_Loft.jpg" style="width:100%;cursor:pointer" onclick="currentDiv5(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo5 w3-opacity w3-hover-opacity-off" src="img/studioloft/Boende_Loft_stege_pentry.jpg" style="width:100%;cursor:pointer" onclick="currentDiv5(3)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo5 w3-opacity w3-hover-opacity-off" src="img/studioloft/Boende Gotland ljungs fem rum - badrum 6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv5(4)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo5 w3-opacity w3-hover-opacity-off" src="img/studioloft/Boende-Västergarn-Gotland-Längan.jpg" style="width:100%;cursor:pointer" onclick="currentDiv5(5)">
+                    </div>
+                </div>
+                  
+            </div>
             <p id="studioLoftTxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta fuga eaque unde quidem, deleniti fugit minus neque consectetur facere, quisquam deserunt aliquid necessitatibus ea. Quae molestiae soluta beatae suscipit.</p>
                   
                     
