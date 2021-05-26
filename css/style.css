@@ -286,8 +286,8 @@ top: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-                            "mainTxt mainImg"
-                            "mainTxt reviews"
+                            "mainImg mainTxt "
+                            "reviews mainTxt"
                             "footer footer"                        
     ;
 }
@@ -303,42 +303,61 @@ top: 0;
 
 #studioSmallImg {
     grid-area: studioSmallImg;
-    width: 460px;
+    display: grid;
+    justify-items: center;
+    border-bottom: 2px solid #333;
 }
 #studioSmallTxt {
     grid-area: studioSmallTxt;
+    border-bottom: 2px solid #333;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #studioStandardImg {
     grid-area: studioStandardImg;
-    width: 460px;
+    display: grid;
+    justify-items: center;
+    border-bottom: 2px solid #333;
 }
 #studioStandardTxt {
     grid-area: studioStandardTxt;
+    border-bottom: 2px solid #333;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #studioLargeImg {
     grid-area: studioLargeImg;
-    width: 460px;
+    display: grid;
+    justify-items: center;
+    border-bottom: 2px solid #333;
 }
 #studioLargeTxt {
     grid-area: studioLargeTxt;
+    border-bottom: 2px solid #333;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #studioLoftImg {
     grid-area: studioLoftImg;
-    width: 460px;
+    display: grid;
+    justify-items: center;
 }
 #studioLoftTxt {
     grid-area: studioLoftTxt;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
 #boende {
-    margin-top: 15px;
-    grid-template-columns: 480px 400px;
+    margin-top: 25px;
+    grid-template-columns: 480px 480px;
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
+    row-gap: 30px;
     grid-template-areas: 
                             /* "propertyImg propertyTxt" */
                             "studioSmallImg studioSmallTxt"
@@ -356,25 +375,30 @@ top: 0;
 
 .w3-row-padding:after,
 .w3-row-padding:before {
-    content:"";display:table;clear:both
+    content:"";
+    display:table;
+    clear:both
 }
 
 .w3-row-padding,
 .w3-row-padding>.w3-col {
-    padding:0 8px
+    padding:0 8px;
 }
 
 .w3-section {
     margin-top:16px!important;
-    margin-bottom:16px!important
+    margin-bottom:16px!important;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .w3-col {
-    float:left;width:100%
+    /* float: left; */
+    width: 100%
 }
 
 .w3-col.s4 {
-    width: 20%
+    width: 19%
 }
 
 .w3-opacity,
@@ -391,7 +415,9 @@ top: 0;
 #studioStandardImg1,
 #studiolargeImg1,
 #studioLoftImg1 {
-    width: 100%;
+    width: 90%;
+    
+    
 }
 
 #propertyImg2,
@@ -415,14 +441,14 @@ top: 0;
 #studioLoftImg3,
 #studioLoftImg4,
 #studioLoftImg5 {
-    width: 100%;
+    width: 90%;
     display:none;
 }
 
 .studio_header {
     display: grid;
-    margin-top: 0px;
-    margin: auto;
+    justify-items: center;
+    margin: 0px;
 }
 
 
