@@ -98,15 +98,16 @@ p {
     margin-bottom: 10px;
 }
 
-#container {
+main {
+    display: grid;
     width: 960px;
-    display: flew;
     margin: auto;
     background-color:;
 }
 
 #navbar {
     display: flex;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     grid-area: navbar;
@@ -156,6 +157,7 @@ ul li a:hover {
 .book-widget-booking-strip-size,
 .book-widget-size-all,
 .book-widget-horizontal {
+    margin: auto;
     height: 50px;
     width: 960px;
     padding: 0px !important; 
@@ -253,7 +255,8 @@ top: 0;
     grid-area: reviews;
     border: 1px solid #333;
     width: 490px;
-    line-height: 24px; 
+    line-height: 24px;
+    font-style: italic; 
 }
 
 .review {
@@ -271,16 +274,15 @@ top: 0;
 
 
 #middleReview {
-    width: 160px;
+    width: 165px;
 }
 
 #lastReview {
     margin: 10px 0px 0px 0px;
-    width: 130px;
+    width: 125px;
 }
 
-main {
-    display: grid;
+#main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -333,11 +335,12 @@ main {
 
 
 #boende {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    margin-top: 15px;
+    grid-template-columns: 480px 400px;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
     grid-template-areas: 
-                            "propertyImg propertyTxt"
+                            /* "propertyImg propertyTxt" */
                             "studioSmallImg studioSmallTxt"
                             "studioStandardImg studioStandardTxt"
                             "studioLargeImg studioLargeTxt"
@@ -348,7 +351,7 @@ main {
 .w3-content { 
     margin-left:auto;
     margin-right:auto;
-    max-width:980px
+    max-width:960px
 }
 
 .w3-row-padding:after,
@@ -371,7 +374,7 @@ main {
 }
 
 .w3-col.s4 {
-    width: 16%
+    width: 20%
 }
 
 .w3-opacity,
@@ -416,9 +419,12 @@ main {
     display:none;
 }
 
-#boende {
-    margin-top: 15px;
+.studio_header {
+    display: grid;
+    margin-top: 0px;
+    margin: auto;
 }
+
 
 
 #footer {
