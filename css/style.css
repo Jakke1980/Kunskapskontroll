@@ -295,8 +295,8 @@ top: 0;
 /* BOENDE */
 #propertyImg {
     grid-area: propertyImg;
-    width: 460px;
 }
+
 #propertyTxt {
     grid-area: propertyTxt;
 }
@@ -355,7 +355,7 @@ top: 0;
 #boende {
     margin-top: 15px;
     grid-template-columns: 480px 480px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
     justify-content: center;
     row-gap: 30px;
     grid-template-areas: 
@@ -415,9 +415,7 @@ top: 0;
 #studioStandardImg1,
 #studiolargeImg1,
 #studioLoftImg1 {
-    width: 90%;
-    
-    
+    width: 90%;   
 }
 
 #propertyImg2,
@@ -449,6 +447,66 @@ top: 0;
     display: grid;
     justify-items: center;
     margin: 0px;
+}
+
+/* Om oss */
+#badImg {
+    display: grid;
+    grid-area: badImg;
+    width: 230px;
+    margin-left: 10px
+}
+#badTxt {
+    margin: 0px;
+    grid-area: badTxt;
+    padding: 0px 10px 0px 10px;
+}
+
+#golfImg {
+    display: grid;
+    grid-area: golfImg;
+    width: 230px;
+    margin-left: 10px;
+}
+#golfTxt {
+    margin: 0px;;
+    grid-area: golfTxt;
+    padding: 0px 10px 0px 10px;;
+}
+
+#fiskeImg {
+    display: grid;
+    grid-area: fiskeImg;
+    width: 230px;
+    margin-left: 10px;
+}
+#fiskeTxt {
+    margin: 0px;
+    grid-area: fiskeTxt;
+    padding: 0px 10px 0px 10px;;
+}
+
+#fagelImg {
+    display: grid;
+    grid-area: fagelImg;
+    width: 230px;
+    margin-left: 10px; 
+}
+#fagelTxt {
+    margin: 0px;
+    padding: 0px 10px 0px 10px;;
+    grid-area: fagelTxt; 
+}
+
+#om_oss {
+    margin-top: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    grid-template-areas: 
+                    "badImg badTxt golfImg golfTxt"
+                    "fiskeImg fiskeTxt fagelImg fagelTxt"
+    ;
 }
 
 
