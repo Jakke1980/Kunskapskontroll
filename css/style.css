@@ -11,7 +11,7 @@
  */
 
  html {
-    font-family: Agenda, Arial, sans-serif;
+    font-family: Arimo, Arial, sans-serif;
     color: #333;
  }
 
@@ -386,8 +386,8 @@ top: 0;
 }
 
 .w3-section {
-    margin-top:16px!important;
-    margin-bottom:16px!important;
+    margin-top:16px !important;
+    margin-bottom:16px !important;
     display: inline-flex;
     justify-content: center;
 }
@@ -530,6 +530,17 @@ top: 0;
 }
 
 
+/* Kontakt */
+
+#kontakt {
+    justify-content: center;
+}
+
+.ssi_makeabooking {
+   background-color: aqua; 
+}
+
+
 #footer {
     margin: auto;
     margin-top: 30px;
@@ -559,30 +570,3 @@ top: 0;
     grid-area: adress;
 }
 
-/* Tablet screen */
-@media screen and (max-width: 768px) {
-    #main {
-    width: 768px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-                            "mainImg mainTxt "
-                            "reviews mainTxt"
-                            "footer footer"                        
-                    ;
-            }
-
-    #footer {
-        grid-template-columns: repeat(2, 1fr);
-        width: 768px;
-        grid-template-areas: "rating kontakt";  
-    }
-}
-
-
-/* Mobile screens */
-@media screen and (max-width: 500px) {
-    #container {
-        width: 300px;
-    }
-}
