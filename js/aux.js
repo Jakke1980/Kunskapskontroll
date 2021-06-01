@@ -1,4 +1,5 @@
 
+
 // Booking widget
 
 jQuery(document).ready(function() {
@@ -11,7 +12,7 @@ jQuery(document).ready(function() {
 		borderColor:'transparent',
 		boxShadow:false,
 		buttonBackgroundColor:'#41b941',
-		buttonTitle:'Sök',
+		buttonTitle:'Boka',
 		dateSelection:1,
 		defaultNightsAdvance:1,
 		defaultNumAdult:2,
@@ -31,6 +32,24 @@ jQuery(document).ready(function() {
 		width:'960px'
 	});
 });
+
+
+// INDEX / HEM
+
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showSlides, 5000);
+// }
 
 // Property
 
@@ -119,6 +138,9 @@ function currentDiv4(n) {
 	x[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " w3-opacity-off";
   }
+
+
+// VÅRA STUDIOS
 
 // Studio Loft
 
