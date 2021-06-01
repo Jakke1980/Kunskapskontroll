@@ -195,7 +195,7 @@ top: 0;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 490px;
+  max-width: 100%;
   position: relative;
   margin-left: 10px;
   z-index: -1;
@@ -559,3 +559,30 @@ top: 0;
     grid-area: adress;
 }
 
+/* Tablet screen */
+@media screen and (max-width: 768px) {
+    #main {
+    width: 768px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+                            "mainImg mainTxt "
+                            "reviews mainTxt"
+                            "footer footer"                        
+                    ;
+            }
+
+    #footer {
+        grid-template-columns: repeat(2, 1fr);
+        width: 768px;
+        grid-template-areas: "rating kontakt";  
+    }
+}
+
+
+/* Mobile screens */
+@media screen and (max-width: 500px) {
+    #container {
+        width: 300px;
+    }
+}

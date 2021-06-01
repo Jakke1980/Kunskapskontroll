@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
 		borderColor:'transparent',
 		boxShadow:false,
 		buttonBackgroundColor:'#41b941',
-		buttonTitle:'Sök',
+		buttonTitle:'Boka',
 		dateSelection:1,
 		defaultNightsAdvance:1,
 		defaultNumAdult:2,
