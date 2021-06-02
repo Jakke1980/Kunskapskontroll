@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 		weekFirstDay:1,
 		widgetLang:'sv',
 		widgetType:'BookingStrip',
-		width:'960px'
+		width:'600px'
 	});
 });
 

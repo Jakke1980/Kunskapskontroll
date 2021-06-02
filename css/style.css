@@ -15,6 +15,8 @@
     color: #333;
  }
 
+ 
+
  body {
      background-color: #fff;
      margin: auto;
@@ -113,7 +115,7 @@ main {
     grid-area: navbar;
     background-color: ;
     border: 1px solid #333;
-    width: 958px;
+    width: 960px;
     height: 40px; 
 }
 
@@ -163,10 +165,10 @@ ul li a:hover {
     padding: 0px !important; 
 }
 
-.book-form-inline {
+/* .book-form-inline {
     height: 50px !important;
     margin: 0px !important;
-}
+} */
 
 .book-widget-bg {
     padding: 0px !important;
@@ -192,7 +194,9 @@ top: 0;
 }
 
 /* slideshow CSS*/
-
+.Slide_img {
+    width: 490px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -233,7 +237,7 @@ top: 0;
     margin-left: 25px;
     grid-area: mainTxt;
     border: 1px solid #333;
-    width: 435px;
+    width: 94%;
     color: #333; 
 }
 #mainInfo {
@@ -254,7 +258,7 @@ top: 0;
     margin-left: 10px;
     grid-area: reviews;
     border: 1px solid #333;
-    width: 490px;
+    width: 98%;
     line-height: 24px;
     font-style: italic; 
 }
@@ -450,6 +454,7 @@ top: 0;
 }
 
 /* Att gora */
+
 #badImg {
     grid-area: badImg;
     width: 230px;
@@ -570,3 +575,205 @@ top: 0;
     grid-area: adress;
 }
 
+  /* Tablet screen */
+@media screen and (max-width: 768px) {
+
+#header {
+    width: 768px;
+}
+#bild_strand_gotland {
+    width: 768px;
+    flex: 1 1 768px;
+    margin-bottom: auto 10px;
+}
+main {
+    width: 768px;
+}
+#container {
+    width: 768px;
+    margin: auto auto;
+}
+
+        /*widget container*/
+.book-row,
+.book-container {
+    width: auto;
+    margin: 0px 0px 0px 0px !important;
+}
+
+#bookWidget-36690-64319-0-1621105362,
+.book-widget,
+.book-widget-holder,
+.book-col-12,
+.book-widget-bg,
+.book-widget-booking-strip-size,
+.book-widget-size-all,
+.book-widget-horizontal {
+    margin: auto !important;
+    height: 50px;
+    width: 768px;
+    padding: 0px !important;
+}
+
+.book-col-12,
+.book-form-control, 
+.datepicker, 
+.hasDatepicker {
+    width: 150px !important;
+}
+
+.book-btn,
+.book-btn-success, 
+.book-btn-block {
+    width: 100px !important;
+}
+
+.book-form-inline {
+    width: 768px;
+}
+#navbar {
+    width: 768px;
+    height: auto;
+}
+
+#navbar-list {
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    height: 40px;
+}
+
+ul li a {
+    padding: 6px 12px;
+}
+
+ul li {
+   align-self: center;
+}
+
+/* Index */
+
+        #main {
+        width: 768px;
+        grid-template-areas: 
+                            "mainImg reviews "
+                            "mainTxt mainTxt"
+                            "footer footer"                        
+    ;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-left: 10px;
+    z-index: -1;
+  }
+
+  .Slide_img {
+    width: 460px;
+}
+
+    #mainTxt {
+        margin: auto auto;
+        margin-top: 10px;
+    }
+
+     #reviews {
+        height: 306.6667px;         
+        text-align: center;
+        margin-top: 15px;
+        width: 96%;
+     }
+     
+     #firstReview,
+     #middleReview,
+     #lastReview {
+         margin: 10px 0px 0px 0px;
+         width: 100%;     
+     }
+     
+    /* Boende  */
+
+    #boende {
+        grid-template-columns: 400px 368px;
+    }
+
+    /* Att göra */
+
+
+    #att_gora {
+        margin-top: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        grid-template-areas: 
+                        "badImg badTxt" 
+                        "golfTxt golfImg"
+                        "fiskeImg fiskeTxt" 
+                        "fagelTxt fagelImg"
+        ;
+    }
+
+    #badImg,
+    #fiskeImg {
+        width: 300px;
+        margin-left: 78px;
+    }
+    
+    #golfImg,
+    #fagelImg {
+        width: 300px;
+        margin-right: 78px;
+    }
+
+    #badTxt,
+    #fiskeTxt {
+        width: 220px;
+        margin-left: 10px;
+    }
+
+    #golfTxt,
+    #fagelTxt {
+        width: 220px;
+        padding: 0px;
+        margin-left: 158px;
+    }
+         
+    
+        #footer {
+            grid-template-columns: repeat(2, 1fr);
+            width: 768px;
+            padding: 0px 10px 0px 10px;
+            grid-template-areas: "rating kontakt adress";  
+        }
+    }
+    
+    
+    
+    /* Mobile screens */
+    @media screen and (max-width: 500px) {
+        #container {
+            width: 300px;
+        }
+
+               /*widget container*/
+#bookWidget-36690-64319-0-1621105362,
+.book-widget,
+.book-widget-holder,
+.book-container,
+.book-col-12,
+.book-widget-bg,
+.book-widget-booking-strip-size,
+.book-widget-size-all,
+.book-widget-horizontal {
+    margin: auto;
+    height: 50px;
+    width: 768px;
+    padding: 0px !important; 
+}
+
+
+.book-col-12,
+.book-form-control, 
+.datepicker, 
+.hasDatepicker {
+    width: 188px !important;
+}
+    }
