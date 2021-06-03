@@ -762,33 +762,181 @@ ul li {
     
     
     
-    /* Mobile screens */
-    @media screen and (max-width: 500px) {
-        #container {
-            width: 300px;
-        }
+    /* Mobile screen */
+@media screen and (max-width: 400px) {
 
-               /*widget container*/
-#bookWidget-36690-64319-0-1621105362,
-.book-widget,
-.book-widget-holder,
-.book-container,
-.book-col-12,
-.book-widget-bg,
-.book-widget-booking-strip-size,
-.book-widget-size-all,
-.book-widget-horizontal {
-    margin: auto;
-    height: 50px;
-    width: 768px;
-    padding: 0px !important; 
-}
-
-
-.book-col-12,
-.book-form-control, 
-.datepicker, 
-.hasDatepicker {
-    width: 188px !important;
-}
+    #header {
+        width: 375px;
     }
+    #bild_strand_gotland {
+        width: 375px;
+        flex: 1 1 375px;
+        margin-bottom: auto 10px;
+    }
+    main {
+        width: 375px;
+    }
+    #container {
+        width: 375px;
+        margin: auto auto;
+    }
+    
+            /*widget container*/
+    .book-row,
+    .book-container {
+        width: auto;
+        margin: 0px 0px 0px 0px !important;
+    }
+    
+    #bookWidget-36690-64319-0-1621105362,
+    .book-widget,
+    .book-widget-holder,
+    .book-col-12,
+    .book-widget-bg,
+    .book-widget-booking-strip-size,
+    .book-widget-size-all,
+    .book-widget-horizontal {
+        margin: auto !important;
+        height: 50px;
+        width: 375px;
+        padding: 0px !important;
+    }
+    
+    .book-col-12,
+    .book-form-control, 
+    .datepicker, 
+    .hasDatepicker {
+        width: 150px !important;
+    }
+    
+    .book-btn,
+    .book-btn-success, 
+    .book-btn-block {
+        width: 100px !important;
+    }
+    
+    .book-form-inline {
+        width: 375px;
+    }
+    #navbar {
+        width: 375px;
+        height: auto;
+    }
+    
+    #navbar-list {
+        margin: 0px 10px 0px 10px;
+        text-align: center;
+        height: 40px;
+    }
+    
+    ul li a {
+        padding: 6px 12px;
+    }
+    
+    ul li {
+       align-self: center;
+    }
+    
+    /* Index */
+    
+            #main {
+            width: 375px;
+            grid-template-areas: 
+                                "mainImg reviews "
+                                "mainTxt mainTxt"
+                                "footer footer"                        
+        ;
+    }
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin-left: 10px;
+        z-index: -1;
+      }
+    
+      .Slide_img {
+        width: 460px;
+    }
+    
+        #mainTxt {
+            margin: auto auto;
+            margin-top: 10px;
+        }
+    
+         #reviews {
+            height: 306.6667px;         
+            text-align: center;
+            margin-top: 15px;
+            width: 96%;
+         }
+         
+         #firstReview,
+         #middleReview,
+         #lastReview {
+             margin: 10px 0px 0px 0px;
+             width: 100%;     
+         }
+         
+        /* Boende  */
+    
+        #boende {
+            grid-template-columns: 375px 368px;
+        }
+    
+        /* Att göra */
+    
+    
+        #att_gora {
+            margin-top: 25px;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 50px;
+            grid-template-areas: 
+                            "badImg badTxt" 
+                            "golfTxt golfImg"
+                            "fiskeImg fiskeTxt" 
+                            "fagelTxt fagelImg"
+            ;
+        }
+    
+        #badImg,
+        #fiskeImg {
+            width: 300px;
+            margin-left: 78px;
+        }
+        
+        #golfImg,
+        #fagelImg {
+            width: 300px;
+            margin-right: 78px;
+        }
+    
+        #badTxt,
+        #fiskeTxt {
+            width: 220px;
+            margin-left: 10px;
+            padding: 0px;
+        }
+    
+        #golfTxt,
+        #fagelTxt {
+            width: 220px;
+            padding: 0px;
+            margin-left: 158px;
+        }
+            
+        /* Om oss */
+    
+        #familj {
+            width: 350px;
+            margin: auto auto;
+        }
+      
+        /* kontakt */
+        
+            #footer {
+                grid-template-columns: repeat(2, 1fr);
+                width: 375px;
+                padding: 0px 10px 0px 10px;
+                grid-template-areas: "rating kontakt adress";  
+            }
+        }
