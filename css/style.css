@@ -632,18 +632,20 @@ main {
 .book-widget-booking-strip-size,
 .book-widget-size-all,
 .book-widget-horizontal {
-    margin: auto !important;
+    float:left;
     height: 50px;
     width: 768px;
     padding: 0px !important;
 }
 
+.book-col-7,
 .book-col-12,
 .book-form-control, 
 .datepicker, 
 .hasDatepicker {
     width: 150px !important;
 }
+
 
 .book-btn,
 .book-btn-success, 
@@ -653,7 +655,57 @@ main {
 
 .book-form-inline {
     width: 768px;
+    height: 50px;
+    margin: 0px;
 }
+
+.book-row,
+.book-form-group,
+.book-form-group.book-va-bottom {
+    margin-right: 0px !important;
+    padding: 0px !important;
+}
+
+#book-checkin-holder {
+    width: 150px !important;
+    margin-right: 0px !important;
+    grid-area: checkIn;
+    justify-self: center;
+}
+
+#book-checkout-holder {
+    width: 150px !important;
+    margin-right: 0px !important;
+    grid-area: checkOut;
+    justify-self: center;
+}
+
+#book-guests-holder {
+    width: 150px !important;
+    margin-right: 0px !important;
+    grid-area: guests;
+    justify-self: center;
+}
+
+.book-col-7,
+.book-btn {
+    width: 130px !important;
+    margin-right: 0px !important;
+    grid-area: book;
+    text-align: center;
+}
+
+.book-form-inline {
+    width: 768px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    grid-template-areas: 
+                            "checkIn checkOut guests book"
+    ;
+}
+
 #navbar {
     width: 768px;
     height: auto;
@@ -1139,7 +1191,7 @@ ul li {
         }
 
         .form-row {
-            display: none;
+            padding: 10px;
         }
 
         /* Footer */
@@ -1162,3 +1214,6 @@ ul li {
                 ;  
             }
         }
+
+
+  

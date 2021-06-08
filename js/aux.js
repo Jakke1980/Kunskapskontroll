@@ -164,14 +164,9 @@ function currentDiv5(n) {
 	dots[slideIndex-1].className += " w3-opacity-off";
   }
 
+  let submit = $('#submit');
+  console.log(submit);
 
-//   let myTitle = document.getElementById('submit')
-//   console.log();
-
-//   let submit = $('#submit');
-//   submit.html('hej');
-//   console.log(submit);
-
-//   submit.on('click', function() {
-// 	  alert('Din förfrågan är mottagen. Vi återkommer så fort vi kan')
-//   });
+  submit.on('click', function() {
+	  alert('Tack för din förfrågan. Vi återkommer så fort vi kan :)')
+  });
