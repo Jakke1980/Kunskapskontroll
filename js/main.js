@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 		weekFirstDay:1,
 		widgetLang:'sv',
 		widgetType:'BookingStrip',
-		width:'600px'
+		width:'960px'
 	});
 });
 
@@ -163,3 +163,8 @@ function currentDiv5(n) {
 	x[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " w3-opacity-off";
   }
+
+  let submit = $('input');
+  submit.on('click', function(event) {
+	  alert('Din förfrågan är mottagen. Vi återkommer så fort vi kan')
+  });

@@ -163,3 +163,15 @@ function currentDiv5(n) {
 	x[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " w3-opacity-off";
   }
+
+
+//   let myTitle = document.getElementById('submit')
+//   console.log();
+
+//   let submit = $('#submit');
+//   submit.html('hej');
+//   console.log(submit);
+
+//   submit.on('click', function() {
+// 	  alert('Din förfrågan är mottagen. Vi återkommer så fort vi kan')
+//   });
