@@ -162,13 +162,13 @@ ul li a:hover {
     margin: auto;
     height: 50px;
     width: 960px;
-    padding: 0px !important; 
+    padding: 0px !important;
 }
 
-/* .book-form-inline {
+.book-form-inline {
     height: 50px !important;
-    margin: 0px !important;
-} */
+    width: 960px;
+}
 
 .book-widget-bg {
     padding: 0px !important;
@@ -177,7 +177,7 @@ ul li a:hover {
 .book-row,
 .book-form-group,
 .book-form-group.book-va-bottom {
-    height: 50px !important;
+    height: 50px;
     margin-right: 10px !important;
     padding: 0px !important;
 }
@@ -543,12 +543,29 @@ top: 0;
 
 /* Kontakt */
 
-#kontakt {
+/* #kontakt {
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 960px;
     justify-content: center;
-}
+} */
 
-.ssi_makeabooking {
-   background-color: aqua; 
+#kontakt_text,
+#form {
+    display: flexbox;
+    margin: 25px 60px 15px 60px;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="comment"],
+input[type="submit"], 
+select,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #333;
 }
 
 
@@ -771,10 +788,10 @@ ul li {
     #bild_strand_gotland {
         width: 375px;
         flex: 1 1 375px;
-        margin-bottom: auto 10px;
+        margin-bottom: 10px;
     }
     main {
-        width: 375px;
+        width: 375px !important;
     }
     #container {
         width: 375px;
@@ -782,10 +799,20 @@ ul li {
     }
     
             /*widget container*/
-    .book-row,
+    
+    
+    
     .book-container {
-        width: auto;
+        width: 375px;
+        height: auto;
         margin: 0px 0px 0px 0px !important;
+    }
+
+    .book-row, 
+    .book-form-group, 
+    .book-form-group.book-va-bottom {
+        height: auto !important;
+        margin: auto auto;
     }
     
     #bookWidget-36690-64319-0-1621105362,
@@ -796,96 +823,268 @@ ul li {
     .book-widget-booking-strip-size,
     .book-widget-size-all,
     .book-widget-horizontal {
-        margin: auto !important;
-        height: 50px;
+        float: left;
+        height: 100px;
         width: 375px;
         padding: 0px !important;
     }
     
-    .book-col-12,
+    .book-col-7,
     .book-form-control, 
     .datepicker, 
     .hasDatepicker {
-        width: 150px !important;
+        width: 130px !important;
     }
     
-    .book-btn,
+    /* .book-col-7 {
+        display: inline-flex;
+    } */
+
+    #book-checkin-holder {
+        width: 130px !important;
+        margin-bottom: 10px;
+        grid-area: checkIn:
+    }
+
+    #book-checkout-holder {
+        width: 130px !important;
+        margin-bottom: 10px;
+        grid-area: checkOut;
+        position: relative;
+        right: 25px;
+    }
+    
+    #book-guests-holder {
+        width: 130px !important;
+        margin-bottom: 10px;
+        grid-area: guests;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .book-btn {
+        width: 130px !important;
+        margin-bottom: 10px;
+        grid-area: book;
+        position: relative;
+        bottom: 10px;
+        right: 25px;
+    }
+    
+    /* .book-btn,
     .book-btn-success, 
     .book-btn-block {
-        width: 100px !important;
-    }
+        width: 130px !important;
+    } */
     
     .book-form-inline {
         width: 375px;
+        justify-items: center;
+        margin: auto auto;
+        height: 100px !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 50px;
+        grid-template-areas: 
+                                "checkIn checkOut"
+                                "guests book"
+        ;
     }
+   
+    #navbar-list {
+        width: 375px;
+    }
+
     #navbar {
         width: 375px;
         height: auto;
+        justify-content: safe space-between;
     }
     
-    #navbar-list {
-        margin: 0px 10px 0px 10px;
-        text-align: center;
-        height: 40px;
-    }
     
     ul li a {
         padding: 6px 12px;
     }
     
-    ul li {
-       align-self: center;
+    #att_gora_gotland,
+    #om_oss_gotland {
+        display: none;
+    }
+
+    /* #hem_gotland,
+    #boende_gotland,
+    #kontakt_gotland {
+        width: 60px;
+        padding: 10px;
+    } */
+
+    #navbar ul li:not(:first-child) {
+        margin: auto;
     }
     
     /* Index */
     
             #main {
             width: 375px;
+            grid-template-columns: 1fr;
             grid-template-areas: 
-                                "mainImg reviews "
-                                "mainTxt mainTxt"
-                                "footer footer"                        
+                                "mainImg"
+                                "mainTxt"
+                                "reviews"
+                                "footer"                        
         ;
     }
     .slideshow-container {
-        max-width: 100%;
-        position: relative;
-        margin-left: 10px;
+        width: 375px;
+        margin: auto auto;
         z-index: -1;
       }
     
       .Slide_img {
-        width: 460px;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
     }
     
         #mainTxt {
-            margin: auto auto;
-            margin-top: 10px;
+            width: 100%;
+            padding: 0px 10px 0px 10px;
+            margin-bottom: 10px;
         }
     
          #reviews {
-            height: 306.6667px;         
+            height: 180px;         
             text-align: center;
-            margin-top: 15px;
-            width: 96%;
+            margin: auto;
+            width: 100%;
+            padding: 0px 10px 0px 10px;
          }
          
          #firstReview,
          #middleReview,
          #lastReview {
              margin: 10px 0px 0px 0px;
-             width: 100%;     
+             width: 100%;
+             height: 50px;     
          }
          
         /* Boende  */
     
+        #propertyImg {
+            grid-area: propertyImg;
+        }
+        
+        #propertyTxt {
+            grid-area: propertyTxt;
+        }
+        
+        #studioSmallImg {
+            grid-area: studioSmallImg;
+            display: grid;
+            justify-items: center;
+            border-bottom: none
+        }
+        #studioSmallTxt {
+            grid-area: studioSmallTxt;
+            border-bottom: 2px solid #333;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #studioStandardImg {
+            grid-area: studioStandardImg;
+            display: grid;
+            justify-items: center;
+            border-bottom: none
+        }
+        #studioStandardTxt {
+            grid-area: studioStandardTxt;
+            border-bottom: 2px solid #333;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #studioLargeImg {
+            grid-area: studioLargeImg;
+            display: grid;
+            justify-items: center;
+            border-bottom: none
+        }
+        #studioLargeTxt {
+            grid-area: studioLargeTxt;
+            border-bottom: 2px solid #333;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #studioLoftImg {
+            grid-area: studioLoftImg;
+            display: grid;
+            justify-items: center;
+        }
+        #studioLoftTxt {
+            grid-area: studioLoftTxt;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .studio_header {
+            display: none;
+        }
+
+#studioSmallImg::before {
+    content: "Studio Small";
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}        
+#studioStandardImg::before {
+    content: "Studio Standard";
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}        
+#studioLargeImg::before {
+    content: "Studio Large";
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}        
+#studioLoftImg::before {
+    content: "Studio Loft";
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}        
+        
         #boende {
-            grid-template-columns: 375px 368px;
+            display: grid;
+            margin-top: 15px;
+            grid-template-columns: 375px;
+            grid-template-rows: auto;
+            justify-content: center;
+            row-gap: 0px;
+            grid-template-areas: 
+                                    /* "propertyImg propertyTxt" */
+                                    "studioSmallImg" 
+                                    "studioSmallTxt"
+                                    "studioStandardImg" 
+                                    "studioStandardTxt"
+                                    "studioLargeImg" 
+                                    "studioLargeTxt"
+                                    "studioLoftImg" 
+                                    "studioLoftTxt"
+            ;
         }
     
         /* Att göra */
     
-    
+/*     
         #att_gora {
             margin-top: 25px;
             grid-template-columns: repeat(2, 1fr);
@@ -925,18 +1124,41 @@ ul li {
         }
             
         /* Om oss */
-    
+/*     
         #familj {
             width: 350px;
             margin: auto auto;
-        }
+        } */
       
         /* kontakt */
         
+        #kontakt_text,
+        #form {
+        display: flexbox;
+        margin: 15px 30px 15px 30px;
+        }
+
+        .form-row {
+            display: none;
+        }
+
+        /* Footer */
+        #adress_gotland,
+        #kontakt_footer {
+            width: 260px;
+            padding: 0px;
+        }
+
             #footer {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 70px);
                 width: 375px;
-                padding: 0px 10px 0px 10px;
-                grid-template-areas: "rating kontakt adress";  
+                height: auto;
+                margin-top: 10px;
+                padding: 0px;
+                grid-template-areas: "kontakt"
+                                     "adress"
+                                     "rating"                    
+                ;  
             }
         }
