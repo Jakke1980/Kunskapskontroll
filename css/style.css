@@ -943,19 +943,16 @@ ul li {
         ;
     }
    
-    #navbar-list {
-        width: 375px;
-    }
-
     #navbar {
-        width: 375px;
+        display: flex;
+        width: auto;
         height: auto;
-        justify-content: safe space-between;
+        justify-content: space-around;
     }
-    
     
     ul li a {
         padding: 6px 12px;
+        flex-grow: 1;
     }
     
     #att_gora_gotland,
@@ -1134,53 +1131,49 @@ ul li {
             ;
         }
     
-        /* Att göra */
+        /* Att göra  */
     
-/*     
+     
         #att_gora {
-            margin-top: 25px;
-            grid-template-columns: repeat(2, 1fr);
-            row-gap: 50px;
+            margin-top: 15px;
+            grid-template-columns: 1fr;
+            row-gap: 15px;
             grid-template-areas: 
-                            "badImg badTxt" 
-                            "golfTxt golfImg"
-                            "fiskeImg fiskeTxt" 
-                            "fagelTxt fagelImg"
+                            "badImg" 
+                            "badTxt"
+                            "golfImg"
+                            "golfTxt"
+                            "fiskeImg"
+                            "fiskeTxt"
+                            "fagelImg" 
+                            "fagelTxt"
             ;
         }
-    
+        
+        #badTxt,
+        #fiskeTxt,
+        #golfTxt,
+        #fagelTxt,
+        #golfImg,
+        #fagelImg,
         #badImg,
         #fiskeImg {
             width: 300px;
-            margin-left: 78px;
+            margin: auto auto;
         }
         
-        #golfImg,
-        #fagelImg {
-            width: 300px;
-            margin-right: 78px;
-        }
     
-        #badTxt,
-        #fiskeTxt {
-            width: 220px;
-            margin-left: 10px;
-            padding: 0px;
-        }
-    
-        #golfTxt,
-        #fagelTxt {
-            width: 220px;
-            padding: 0px;
-            margin-left: 158px;
-        }
-            
+       
         /* Om oss */
-/*     
+    
+        #om_oss {
+            display: block;
+        }
+
         #familj {
             width: 350px;
             margin: auto auto;
-        } */
+        }
       
         /* kontakt */
         
