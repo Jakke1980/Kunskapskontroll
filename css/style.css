@@ -12,39 +12,23 @@
 
  html {
     font-family: Arimo, Arial, sans-serif;
-    color: #333;
+    color: var(--text);
  }
 
- 
+ :root {
+  --main-bg: #fcefe9;
+  --standout-bg: #ede2dd;
+  --headlines: #6B3010;
+  --hover: #6B3010;
+  --active: #6B3010;
+  --text: #474747;
+  --softText: #605E5E;
+  --border: #605E5E;
+}
 
- body {
-     background-color: #fff;
-     margin: auto;
-     /* width: 1200px; */
-     /* padding-top: 72px;
-     /* line-height: 150%; /* means 150% increase */
-     /* font-size: 16px; */
- }
-
- body:hover {
-    background: url(../img/16_col_with_24px_lines.png) center -12px repeat-y #fff; 
- }
-
-/* 
-1em is equal to what ever the font-size
-If font-size is 16px, that means 1em = 16px
-
-2em = 32px
-
-- em: Relative to the font-size of the element (2em means 2 times the size of the current font)
-- rem: Relative to font-size of the root element
-*/
-
-
-/* 
-If 16 is our font-size, then 16 * 1.5 = 24 is our magic number 
-24 will be used to determen the vertical rythme of our content
-*/
+body {
+    margin: auto;
+}
 
  /* Headings */
 
@@ -83,8 +67,12 @@ h5, h6 {
 p {
     margin-bottom: 24px;
     line-height: 24px;
+    color: var(--text);
 }
 
+.review {
+    color: var(--softText);
+}
 
 /* Layout */
 
@@ -97,15 +85,82 @@ p {
 #bild_strand_gotland {
     width: 960px;
     flex: 1 1 960px;
-    margin-bottom: 10px;
+}
+
+#container {
+    width: 960px;
+    margin: auto auto;
+    background-color: var(--main-bg);
 }
 
 main {
     display: grid;
     width: 960px;
     margin: auto;
-    background-color:;
+    padding-bottom: 30px;
 }
+
+
+/*widget container*/
+.book-container,
+.book-col-12,
+.book-widget-bg,
+.book-widget-booking-strip-size,
+.book-widget-size-all,
+.book-widget-horizontal {
+    margin: auto;
+    height: 36px;
+    width: 960px;
+    padding-top: 7px !important;
+}
+
+.book-container {
+    height: 50px;
+    background-color: var(--main-bg);
+}
+
+.book-form-inline {
+    margin-bottom: 0px !important;
+    height: 36px !important;
+    width: 960px;
+}
+
+.book-widget-bg {
+    padding: 0px !important;
+}
+
+.book-widget,
+.book-widget-holder,
+.book-row,
+.book-form-group,
+.book-form-group.book-va-bottom {
+    height: 50px;
+    padding: 0px !important;
+}
+
+.book-row{
+    margin: 0px 0px !important;
+    width: 960px;
+    border-bottom: 1px solid var(--border);
+}
+
+.book-btn,
+.book-btn-success, 
+.book-btn-block {
+    width: 100px !important;
+}
+
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+margin: auto;
+height: 50px;
+width: 960px;
+padding: 0px !important;
+top: 0;
+z-index: 2;
+}
+
 
 #navbar {
     display: flex;
@@ -114,9 +169,10 @@ main {
     align-items: center;
     grid-area: navbar;
     background-color: ;
-    border: 1px solid #333;
+    border-bottom: 1px solid var(--text);
     width: 960px;
-    height: 40px; 
+    height: 50px;
+    background-color: var(--standout-bg); 
 }
 
 #navbar ul {
@@ -132,67 +188,25 @@ main {
 }
 
 ul li a {
-    color: lightseagreen;
+    color: var(--headlines);
     text-decoration: none;
     padding: 8px 16px;
+    font-weight: 600;
 }
 
 ul li a:hover {
-    background-color: rgb(104, 104, 114);
+    background-color: var(--hover);
     color: white;
     border-radius: 5px; 
 }
 
 .active {
-    background-color: rgb(31, 31, 74);
+    background-color: var(--active);
     color: white;
     border-radius: 5px;   
 }
 
-/*widget container*/
-#bookWidget-36690-64319-0-1621105362,
-.book-widget,
-.book-widget-holder,
-.book-container,
-.book-col-12,
-.book-widget-bg,
-.book-widget-booking-strip-size,
-.book-widget-size-all,
-.book-widget-horizontal {
-    margin: auto;
-    height: 50px;
-    width: 960px;
-    padding: 0px !important;
-}
 
-.book-form-inline {
-    height: 50px !important;
-    width: 960px;
-}
-
-.book-widget-bg {
-    padding: 0px !important;
-}
-
-.book-row,
-.book-form-group,
-.book-form-group.book-va-bottom {
-    height: 50px;
-    margin-right: 10px !important;
-    padding: 0px !important;
-}
-
-.book-btn,
-.book-btn-success, 
-.book-btn-block {
-    width: 100px !important;
-}
-
-.sticky {
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-}
 
 .mySlides {
     grid-area: mainImg;
@@ -208,7 +222,6 @@ top: 0;
   max-width: 100%;
   position: relative;
   margin-left: 10px;
-  z-index: -1;
 }
 /* Hide img by default*/
 .mySlides {
@@ -233,7 +246,7 @@ top: 0;
   }
 
 #mainHeading {
-   color: lightseagreen;
+   color: var(--text);
    text-align: center;
    margin-top: 10px; 
 }
@@ -242,7 +255,7 @@ top: 0;
     margin-top: 15px;
     margin-left: 25px;
     grid-area: mainTxt;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     width: 94%;
     color: #333; 
 }
@@ -263,7 +276,7 @@ top: 0;
 #reviews {
     margin-left: 10px;
     grid-area: reviews;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     width: 98%;
     line-height: 24px;
     font-style: italic; 
@@ -315,11 +328,11 @@ top: 0;
     grid-area: studioSmallImg;
     display: grid;
     justify-items: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
 }
 #studioSmallTxt {
     grid-area: studioSmallTxt;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -328,11 +341,11 @@ top: 0;
     grid-area: studioStandardImg;
     display: grid;
     justify-items: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
 }
 #studioStandardTxt {
     grid-area: studioStandardTxt;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -341,11 +354,11 @@ top: 0;
     grid-area: studioLargeImg;
     display: grid;
     justify-items: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
 }
 #studioLargeTxt {
     grid-area: studioLargeTxt;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--border);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -363,7 +376,7 @@ top: 0;
 
 
 #boende {
-    margin-top: 15px;
+    padding-top: 15px;
     grid-template-columns: 480px 480px;
     grid-template-rows: auto;
     justify-content: center;
@@ -506,7 +519,7 @@ top: 0;
 }
 
 #att_gora {
-    margin-top: 15px;
+    padding-top: 15px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 30px;
@@ -531,7 +544,7 @@ top: 0;
 
 
 #om_oss {
-    margin-top: 15px;
+    padding-top: 15px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     row-gap: 30px;
@@ -542,13 +555,6 @@ top: 0;
 
 
 /* Kontakt */
-
-/* #kontakt {
-    display: flexbox;
-    flex-wrap: wrap;
-    width: 960px;
-    justify-content: center;
-} */
 
 #kontakt_text,
 #form {
@@ -571,15 +577,16 @@ textarea {
 
 #footer {
     margin: auto;
-    margin-top: 30px;
     grid-area: footer;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 85px;
     align-items: center;
     justify-items: center;
-    border: 1px solid #333;
+    border-top: 1px solid var(--border);;
+    border-bottom: 1px solid var(--border);;
     width: 960px;
+    background-color: var(--standout-bg); 
     grid-template-areas: "rating kontakt adress";
 }
 
@@ -591,6 +598,11 @@ textarea {
 #kontakt_footer {
     padding-left: 70px;
     grid-area: kontakt;
+}
+
+#tel,
+#mail {
+    color: var(--text);
 }
 
 #adress_gotland {
@@ -609,6 +621,11 @@ textarea {
     flex: 1 1 768px;
     margin-bottom: auto 10px;
 }
+
+body {
+    background-color: var(--main-bg);
+}
+
 main {
     width: 768px;
 }
@@ -696,9 +713,11 @@ main {
 }
 
 .book-form-inline {
+    padding-top: 5px;
     width: 768px;
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px;
     grid-template-areas: 
@@ -719,6 +738,7 @@ main {
 
 ul li a {
     padding: 6px 12px;
+    font-weight: 400;
 }
 
 ul li {
@@ -739,7 +759,6 @@ ul li {
     max-width: 100%;
     position: relative;
     margin-left: 10px;
-    z-index: -1;
   }
 
   .Slide_img {
@@ -773,6 +792,9 @@ ul li {
 
     /* Att göra */
 
+body {
+    background-color: var(--main-bg);
+}
 
     #att_gora {
         margin-top: 25px;
@@ -813,6 +835,10 @@ ul li {
     }
         
     /* Om oss */
+
+    body {
+    background-color: var(--main-bg);
+}
 
     #familj {
         width: 350px;
@@ -942,10 +968,21 @@ ul li {
                                 "guests book"
         ;
     }
-   
+
+    .sticky {
+position: -webkit-sticky;
+position: sticky;
+margin: auto;
+height: 50px;
+width: 375px;
+padding: 0px !important;
+top: 0;
+z-index: 2;
+}
+
     #navbar {
         display: flex;
-        width: auto;
+        width: 375px;
         height: auto;
         justify-content: space-around;
     }
@@ -986,7 +1023,6 @@ ul li {
     .slideshow-container {
         width: 375px;
         margin: auto auto;
-        z-index: -1;
       }
     
       .Slide_img {
